@@ -56,6 +56,15 @@ VideoTube is a video uploading site containing standard features of YouTube that
 
   - open any browser and type http://localhost/VideoTube.
   
-  
+  ## Requirements
+:point_right: PHP 5.3 +
+
+:point_right: Mysql 5.0 +
+
+:point_right: PDO Extension in PHP
+
+:point_right: Web Browser FF17.0+, IE8+, Opera, Chrome .... TODO testing
+
+
  
 [Back To The Top](#videotube)
