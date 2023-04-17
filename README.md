@@ -34,8 +34,6 @@ VideoTube is a video uploading site containing standard features of YouTube that
 
  - Open XAMPP Control panal and start [apache] and [mysql] .
 
- - Download project from github(https://github.com/itisaasim/VideoTube.git)
-   OR follow gitbash commands
 
 ```html
      cd C:\\xampp\htdocs\
