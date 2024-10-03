@@ -1,68 +1,66 @@
-# VideoTube
-   #### video uploading site just like YouTube 
 
-## Description
+# VideoTube - YouTube Clone Project
 
-VideoTube is a video uploading site containing standard features of YouTube that enables you to launch your video and other features like:
- - video thumbnail generation 
- - server side video conversion
- - full video player</li>
- - likes + dislikes on videos
- - full comment system with likes/dislikes, replies etc.
- - video details editing
- - account creation
- - and <strong>much</strong> more!
+## Overview
 
-#### Technologies
+VideoTube is a full-featured YouTube clone built using PHP, MySQL, JavaScript, and HTML/CSS. It replicates core YouTube functionality including video uploads, comments, likes/dislikes, user profiles, subscriptions, and more.
 
-- HTML
-- CSS
-- JavaScript
-- JQuery
-- PHP
-- MySQL
+## Key Features
 
-### Screenshots
+- Video upload and conversion 
+- Video player with custom controls
+- Comment system with replies
+- Like/dislike functionality
+- User registration and profiles
+- Subscription system
+- Video search
+- Trending videos section
+- Responsive design
 
-![Screenshot 2023-04-18 024122](https://user-images.githubusercontent.com/111583166/232612617-367516b4-f2dd-47ae-b2c6-4855df324f7a.png)
+## Technical Details
 
-### How to use
+### Backend
+- PHP for server-side logic
+- MySQL database for data storage
+- PDO for database interactions
+- Custom classes for key entities (User, Video, Comment etc.)
 
-#### Installation
+### Frontend  
+- HTML5 video player
+- JavaScript/jQuery for dynamic interactions
+- Bootstrap for responsive layout
+- Custom CSS for styling
 
- - Install <a href="https://www.apachefriends.org/index.html">XAMPP</a> or <a href="https://sourceforge.net/projects/wampserver/">WAMPP</a>.
+### Key Components
 
- - Open XAMPP Control panal and start [apache] and [mysql] .
+- Video processing using FFmpeg
+- Thumbnail generation
+- AJAX for asynchronous actions (likes, comments etc.)
+- Session-based authentication
 
+## Setup and Usage
 
-```html
-     cd C:\\xampp\htdocs\
+1. Install XAMPP or similar PHP/MySQL environment
+2. Clone repository to web server directory
+3. Import provided SQL file to set up database
+4. Configure database connection in `includes/config.php`
+5. Access via `http://localhost/VideoTube`
 
-     git clone https://github.com/itisaasim/VideoTube.git
-```  
-  - extract files in C:\xampp\htdocs.
+## File Structure
 
-  - open link localhost/phpmyadmin.
-  
-  - click on new at side navbar.
+- `index.php` - Homepage
+- `watch.php` - Video viewing page  
+- `upload.php` - Video upload page
+- Classes in `includes/classes/`
+- JavaScript in `assets/js/`
+- CSS in `assets/css/`
 
-  - give a database name as VideoTube and click import.
+## Key Functionality
 
-  - browse the file in directory[VideoTUbe/database/videotube.sql].
+- Video upload converts to MP4 and generates thumbnails
+- Comments support nested replies
+- Like/dislike affects both videos and comments
+- Trending algorithm based on view count
+- Search queries video titles and uploader usernames
 
-  - after importing successfully.
-
-  - open any browser and type http://localhost/VideoTube.
-  
-  ## Requirements
-:point_right: PHP 5.3 +
-
-:point_right: Mysql 5.0 +
-
-:point_right: PDO Extension in PHP
-
-:point_right: Web Browser FF17.0+, IE8+, Opera, Chrome .... TODO testing
-
-
- 
-[Back To The Top](#videotube)
+This project demonstrates a complex, feature-rich web application built primarily with PHP. It showcases database design, OOP principles, frontend/backend integration, and handling of multimedia content.
